@@ -1,0 +1,158 @@
+:root {
+  --color-primary: #f9e267;
+  --color-dark: black;
+  --color-light: white;
+  --color-gray: #b3b3b3;
+
+  --font: "system-ui", "sans-serif";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #544c20;
+    --color-dark: white;
+    --color-light: black;
+    --color-gray: #b3b3b3;
+
+    --font: "system-ui", "sans-serif";
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--color-dark);
+}
+
+html {
+  padding: 0.5rem;
+  background: var(--color-light);
+  line-height: 1.3rem;
+  color: var(--color-dark);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(100px, 180px) 1fr;
+  gap: 6px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header_photo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.header_text {
+  background: var(--color-primary);
+  padding: 2rem;
+}
+
+.header_text h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header_text h2 {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem 4rem;
+}
+
+.content_title {
+  background: var(--color-dark);
+  color: var(--color-light);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+}
+
+.content_subtitle {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.content_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: min-content;
+  gap: 30px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .content_details {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content_details > div:nth-child(2) {
+  order: 2;
+}
+
+.content_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.content_detail a,
+.content_detail span {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.content_detail a[href*="mailto"] {
+  text-decoration: underline;
+}
+
+.content_date-time {
+  color: var(--color-gray);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.content_list {
+  margin-left: 2rem;
+  margin-block: 0.75rem;
+}
+
+.content_list > li {
+  margin-bottom: 0.2rem;
+}
+
+.content_skills {
+  gap: 14px 60px;
+}
+
+.content_skill > progress {
+  width: 100%;
+  height: 5px;
+  background: var(--color-dark);
+}
+
+.content_skill > progress::-webkit-progress-value {
+  background: var(--color-dark);
+}
+
+.content_skill > progress::-webkit-progress-bar {
+  background: var(--color-gray);
+}

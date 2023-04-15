@@ -5,40 +5,50 @@
     <meta name="description" content="Curriculum vitae de Santiago Martin" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
-      <img src="./cv-photo.jpg" alt="Foto de Santiago Martin" width="300" />
-      <div>
-        <h1>Santiago Martin</h1>
+    <header class="header">
+      <img
+        class="header_photo"
+        src="./cv-photo.jpg"
+        alt="Foto de Santiago Martin"
+      />
+      <div class="header_text">
+        <h1>
+          Santiago<br />
+          Martin
+        </h1>
         <h2>Estudiante</h2>
       </div>
     </header>
-    <main>
+    <main class="content">
       <section>
-        <h3>Detalles</h3>
-        <div>
+        <h3 class="content_title">Detalles</h3>
+        <div class="content_details">
           <div>
-            <h4>Contactos</h4>
-            <address>
-              Calle de San Lorenzo, 67, 280004, Madrid, España
+            <h4 class="content_subtitle">Contactos</h4>
+            <address class="content_detail">
+              <span>Calle de San Lorenzo, 67, 280004, Madrid, España</span>
               <a href="mailto:s.martin01@hotmai.com">s.martin01@hotmai.com</a>
               <a href="tel:0342347562">034 2347562</a>
             </address>
           </div>
           <div>
-            <h4>Fecha / Lugar de nacimiento</h4>
-            <time datetime="1991-07-26">26/07/1991</time>
-            <p>Barcelona</p>
+            <h4 class="content_subtitle">Fecha / Lugar de nacimiento</h4>
+            <div class="content_detail">
+              <time datetime="1991-07-26">26/07/1991</time>
+              <p>Barcelona</p>
+            </div>
           </div>
           <div>
-            <h4>Nacionalidad</h4>
-            <p>Español</p>
+            <h4 class="content_subtitle">Nacionalidad</h4>
+            <p class="content_detail">Español</p>
           </div>
         </div>
       </section>
       <section>
-        <h3>Perfil</h3>
+        <h3 class="content_title">Perfil</h3>
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
           enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
@@ -54,34 +64,36 @@
         </p>
       </section>
       <section>
-        <h3>Educación</h3>
+        <h3 class="content_title">Educación</h3>
         <div>
-          <h4>
+          <h4 class="content_subtitle">
             Grado en Comunicación Audiovisual, Universidad de Sevilla, Sevilla
           </h4>
-          <p>Septiembre 2016 - Presete</p>
-          <ul>
+          <p class="content_date-time">Septiembre 2016 - Presete</p>
+          <ul class="content_list">
             <li>Cuesando la carrera de Comunicación Audiovisual</li>
             <li>Nota media: 8,5</li>
           </ul>
         </div>
         <div>
-          <h4>
+          <h4 class="content_subtitle">
             Título de Bachillerato, Colegio San Francisco de Paula, Sevilla
           </h4>
-          <p>Septiembre 2012 - Junio 2016</p>
-          <ul>
+          <p class="content_date-time">Septiembre 2012 - Junio 2016</p>
+          <ul class="content_list">
             <li>Nota máxima de prueba EBAU</li>
             <li>Presidente del Club de Periodismo</li>
           </ul>
         </div>
       </section>
       <section>
-        <h3>Experiencia laboral</h3>
+        <h3 class="content_title">Experiencia laboral</h3>
         <div>
-          <h4>Asociado de ventas, Libreria Big Apple, Sevilla</h4>
-          <p>Septiembre 2016 - Junio 2018</p>
-          <ul>
+          <h4 class="content_subtitle">
+            Asociado de ventas, Libreria Big Apple, Sevilla
+          </h4>
+          <p class="content_date-time">Septiembre 2016 - Junio 2018</p>
+          <ul class="content_list">
             <li>Recepcion de clientes y ayuda en la busqueda de libros.</li>
             <li>
               Sugerencias literarias basadas en las necesidades y deseos del
@@ -95,24 +107,26 @@
         </div>
       </section>
       <section>
-        <h3>Competencias</h3>
-        <div>
-          <label for="communication"
-            >Habilidades de comunicacion avanzada</label
-          >
-          <progress id="communication" max="100" value="100">%100</progress>
-        </div>
-        <div>
-          <label for="social-network">Plataformas de medios sociales</label>
-          <progress id="social-network" max="100" value="80">%80</progress>
-        </div>
-        <div>
-          <label for="journalism">Periodismo</label>
-          <progress id="journalism" max="100" value="75">%75</progress>
-        </div>
-        <div>
-          <label for="office">Habilidades de ofimatica</label>
-          <progress id="office" max="100" value="70">%70</progress>
+        <h3 class="content_title">Competencias</h3>
+        <div class="content_details content_skills">
+          <div class="content_detail content_skill">
+            <label for="communication"
+              >Habilidades de comunicacion avanzada</label
+            >
+            <progress id="communication" max="100" value="100">%100</progress>
+          </div>
+          <div class="content_detail content_skill">
+            <label for="social-network">Plataformas de medios sociales</label>
+            <progress id="social-network" max="100" value="80">%80</progress>
+          </div>
+          <div class="content_detail content_skill">
+            <label for="journalism">Periodismo</label>
+            <progress id="journalism" max="100" value="75">%75</progress>
+          </div>
+          <div class="content_detail content_skill">
+            <label for="office">Habilidades de ofimatica</label>
+            <progress id="office" max="100" value="70">%70</progress>
+          </div>
         </div>
       </section>
     </main>
